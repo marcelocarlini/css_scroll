@@ -5,4 +5,5 @@ const myObserver = new IntersectionObserver((entries) => {
 
 })
 
+
 myObserver.observe(ultimaSecao)
