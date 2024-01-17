@@ -7,21 +7,60 @@
 body {
   background-color: black;
   color: aliceblue;
-  margin: 30px;
+  margin: 50px;
 }
 
-h2{
-    text-align: center;
-    font-size: 30px;
+h2 {
+  text-align: center;
+  font-size: 100px;
+  color: blueviolet;
+  border-bottom: 5px solid #fff;
 }
 
-p{
-    font-size: 15px;
+p {
+  margin: 50px;
+  font-size: 50px;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
-section{
-    display: grid;
-    place-items:center;
-    align-items:center;
-    min-height: 100vh;
+section {
+  display: grid;
+  place-items: center;
+  align-items: center;
+  min-height: 100vh;
+  border-bottom: 1px solid #fff;
+}
+.hidden {
+  opacity: 0;
+  filter: blur(15px);
+  transition: all 2s;
+  transform: translateX(-100%);
+}
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transition: all 2s;
+  transform: translateX(0%);
+}
+.logos {
+  display: flex;
+  gap: 20px;
+}
+.avatar {
+  height: 200px;
+  background-color: aliceblue;
+  border-radius: 10px;
+  margin: 5px;
+}
+.logos :nth-child(2) {
+  transition-delay: 400ms;
+}
+.logos :nth-child(3) {
+  transition-delay: 700ms;
+}
+.logos :nth-child(2) {
+  transition-delay: 1000ms;
+}
+.neooh {
+  height: 100px;
 }
